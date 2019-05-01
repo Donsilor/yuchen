@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>店铺首页</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery172.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+</head>
+<body>
+<!--顶部-->
+<div class="com_top">
+ <form class="search">
+  <a href="#" class="search_L"></a>
+  <input type="text" placeholder="大疆无人机"/>
+ </form>
+ <a class="a1 btn" href="#">搜本店</a>
+ <a class="a2 btn" href="#">搜全站</a>
+ <div class="clear"></div>
+</div>
+<!--banner-->
+<div class="banner">
+ <ul class="bxslider">
+  <li class="bannerli" style="background:url(images/banner5.jpg) no-repeat center top; background-size:100%"><a href="#"></a></li>
+  <li class="bannerli" style="background:url(images/banner6.jpg) no-repeat center top; background-size:100%"><a href="#"></a></li>
+  <li class="bannerli" style="background:url(images/banner7.jpg) no-repeat center top; background-size:100%"><a href="#"></a></li>
+  <li class="bannerli" style="background:url(images/banner8.jpg) no-repeat center top; background-size:100%"><a href="#"></a></li>
+ </ul>
+<script>
+$(document).ready(function(){
+var slider = $('.bxslider').bxSlider({
+mode: 'horizontal',
+captions: true,
+auto: true,
+speed: 500,
+controls: true,
+pause: 5000,
+onSliderLoad:function(){
+$(".bx-pager-item a").click(function() {
+var thumbIndex = $('.bx-pager-item a').index(this);
+slider.goToSlide(thumbIndex);
+slider.startAuto();
+$('.bx-pager-item a').removeClass('active');
+$(this).addClass('active');
+return false;
+});
+$(".bx-wrapper a.bx-next,.bx-wrapper a.bx-prev").click(function() {
+var thumbIndex = $('.bx-pager-item a.active').parent().index();
+slider.goToSlide(thumbIndex);
+slider.startAuto();
+$('.bx-pager-item a').removeClass('active');
+$('.bx-pager-item').eq(thumbIndex).find('a').addClass('active');
+return false;
+});
+}
+});
+})
+</script>
+<script type="text/javascript">
+/*获取自适应高度*/
+if ((document.body) && (document.documentElement.clientHeight)) 
+winHeight = document.documentElement.clientHeight;
+
+/*获取自适应宽度*/
+if ((document.body) && (document.body.clientWidth)) 
+winWidth = document.body.clientWidth; 
+
+$(".bannerli").css({"width":(winWidth-0)+"px"});
+
+if ((document.body) && (document.body.clientWidth<1200)) 
+$(".bannerli").css({"width":(100)+"%"});
+
+
+</script>
+<div class="clear"></div>
+</div>
+<!--店铺名称-->
+<div class="storeName">
+ <img src="images/logo11.jpg">
+ <p>大疆官方旗舰店</p>
+ <a>收藏</a>
+ <div class="clear"></div>
+</div>
+<!--切换-->
+<div class="switch"><a href="#">店铺首页</a><a href="#">产品展厅</a></div>
+<!--优惠券-->
+<div class="coupons">
+ <a href="#"><img src="images/coupons3.png"></a>
+ <a href="#"><img src="images/coupons3.png"></a>
+ <a href="#"><img src="images/coupons4.png"></a>
+ <div class="clear"></div>
+</div>
+<!--推荐商品-->
+<div class="goods">
+ <p class="title">推荐商品</p>
+ <div class="ctn">
+  <a href="#"><img src="images/advice1.jpg"></a>
+  <p>易瓦特EWZ-S8Mini型八旋翼智能农药喷洒无人机</p>
+  <b>¥ 19999</b>
+ </div>
+ <div class="ctn">
+  <a href="#"><img src="images/advice2.jpg"></a>
+  <p>易瓦特EWZ-S8Mini型八旋翼智能农药喷洒无人机</p>
+  <b>¥ 19999</b>
+ </div>
+ <div class="ctn">
+  <a href="#"><img src="images/advice1.jpg"></a>
+  <p>易瓦特EWZ-S8Mini型八旋翼智能农药喷洒无人机</p>
+  <b>¥ 19999</b>
+ </div>
+ <div class="ctn">
+  <a href="#"><img src="images/advice2.jpg"></a>
+  <p>易瓦特EWZ-S8Mini型八旋翼智能农药喷洒无人机</p>
+  <b>¥ 19999</b>
+ </div>
+ <div class="clear"></div>
+</div>
+<!--热销商品-->
+<div class="goods2">
+ <p class="title">热销商品</p>
+ <div class="ctn">
+  <a href="#"><img src="images/advice1.jpg"></a>
+  <p>易瓦特EWZ-S8Mini型八旋翼智能农药喷洒无人机</p>
+  <b>¥ 19999</b>
+ </div>
+ <div class="ctn">
+  <a href="#"><img src="images/advice2.jpg"></a>
+  <p>易瓦特EWZ-S8Mini型八旋翼智能农药喷洒无人机</p>
+  <b>¥ 19999</b>
+ </div>
+ <div class="ctn">
+  <a href="#"><img src="images/advice1.jpg"></a>
+  <p>易瓦特EWZ-S8Mini型八旋翼智能农药喷洒无人机</p>
+  <b>¥ 19999</b>
+ </div>
+ <div class="ctn">
+  <a href="#"><img src="images/advice2.jpg"></a>
+  <p>易瓦特EWZ-S8Mini型八旋翼智能农药喷洒无人机</p>
+  <b>¥ 19999</b>
+ </div>
+ <div class="clear"></div>
+</div>
+<!--关注-->
+<div class="Focus"><a href="#">关注宇辰服务号 获取优惠资讯</a></div>
+<!--固定底部-->
+<div class="com_bottom">
+ <ul>
+  <li><a href="#" class="a1">购物</a></li>
+  <li><a href="#" class="a2">搜索</a></li>
+  <li><a href="#" class="a3">特价</a></li>
+  <li><a href="#" class="a4">购物车</a></li>
+  <li><a href="#" class="a5">我的</a></li>
+ </ul>
+</div>
+</body>
+</html>

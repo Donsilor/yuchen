@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商品详情页</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<link href="css/goods.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery172.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/yiqijs.js"></script>
+</head>
+<body>
+<!--图片轮播-->
+<div class="banner">
+ <ul class="bxslider">
+  <li class="bannerli" style="background:url(images/goods_pic1.jpg) no-repeat center top; background-size:100%"><a href="#"></a></li>
+  <li class="bannerli" style="background:url(images/goods_pic2.jpg) no-repeat center top; background-size:100%"><a href="#"></a></li>
+  <li class="bannerli" style="background:url(images/goods_pic3.jpg) no-repeat center top; background-size:100%"><a href="#"></a></li>
+  <li class="bannerli" style="background:url(images/goods_pic4.jpg) no-repeat center top; background-size:100%"><a href="#"></a></li>
+ </ul>
+<script>
+$(document).ready(function(){
+var slider = $('.bxslider').bxSlider({
+mode: 'horizontal',
+captions: true,
+auto: true,
+speed: 500,
+controls: true,
+pause: 5000,
+onSliderLoad:function(){
+$(".bx-pager-item a").click(function() {
+var thumbIndex = $('.bx-pager-item a').index(this);
+slider.goToSlide(thumbIndex);
+slider.startAuto();
+$('.bx-pager-item a').removeClass('active');
+$(this).addClass('active');
+return false;
+});
+$(".bx-wrapper a.bx-next,.bx-wrapper a.bx-prev").click(function() {
+var thumbIndex = $('.bx-pager-item a.active').parent().index();
+slider.goToSlide(thumbIndex);
+slider.startAuto();
+$('.bx-pager-item a').removeClass('active');
+$('.bx-pager-item').eq(thumbIndex).find('a').addClass('active');
+return false;
+});
+}
+});
+})
+</script>
+<script type="text/javascript">
+/*获取自适应高度*/
+if ((document.body) && (document.documentElement.clientHeight)) 
+winHeight = document.documentElement.clientHeight;
+
+/*获取自适应宽度*/
+if ((document.body) && (document.body.clientWidth)) 
+winWidth = document.body.clientWidth; 
+
+$(".bannerli").css({"width":(winWidth-0)+"px"});
+
+if ((document.body) && (document.body.clientWidth<1200)) 
+$(".bannerli").css({"width":(100)+"%"});
+
+
+</script>
+<div class="clear"></div>
+</div>
+<!--商品名-->
+<div class="proname">
+ <p>DJI大疆精灵 Phantom 3 Professional遥控航拍无人机四轴飞行器</p>
+ <p>租赁:<span>¥ 399.0</span>购买:<span>¥ 3999.0</span></p>
+</div>
+<!--促销-->
+<div class="cuxiao">
+ <span>促销 :</span><a href="#" class="a1">可享受以下促销</a><a href="#" class="a2"></a>
+ <div class="clear"></div>
+</div>
+<!--选择参数-->
+<div class="canshu">
+ <div><span class="spL">选择参数 :</span><a href="#" class="abtn">精灵3-2.7K版</a></div>
+ <div><span class="spL">数量 :</span>
+  <div class="pronadd">
+   <a onclick="javascript:sub()" class="aL">-</a>
+   <input id="txt" type="text" class="pronum" value="1" />
+   <a onclick="javascript:add()" class="aR">+</a>
+  </div>
+ </div>
+ <div><span class="spL">运费 :</span><span>¥ 60.0</span></div>
+ <div class="clear"></div>
+</div>
+<!--店铺-->
+<div class="store">
+ <div class="logo"><img src="images/logo12.jpg"><p>大疆官方旗舰店</p><div class="clear"></div></div>
+ <div class="choose"><a href="#">收藏店铺</a><a href="#">进入店铺</a><div class="clear"></div></div>
+ <div class="fuwu">服务 :</div>
+ <div class="tip">提示 :</div>
+ <div class="clear"></div>
+</div>
+<!--图文详情-->
+<div class="tuwen">
+ <span>图文详情</span>
+ <a href="#"></a>
+ <div class="clear"></div>
+</div>
+<!--评论-->
+<div class="pinlun">
+ <div class="head">
+  <span class="sp1">评价</span>
+  <span class="sp2">好评100%</span>
+  <a>共 5599 条评论</a>
+ </div>
+ <div class="ctn">
+  <div class="head">
+   <span class="username">航拍专家陈小洲</span>
+   <span class="vip">(白金会员)</span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="time">2015-11-29</span>
+  </div>
+  <div class="con">买的宝贝回来了，质量杠杠的，当天就跑到郊区飞了一把，稳定性很好，赞赞赞！</div>
+  <div class="model"><span class="xinhao">型号:精灵3-2.7K版</span><span class="spR">1 回复</span></div>
+  <div class="clear"></div>
+ </div>
+ <div class="ctn">
+  <div class="head">
+   <span class="username">ZIVA</span>
+   <span class="vip">(钻石会员)</span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="time">2015-10-13</span>
+  </div>
+  <div class="con">还是信不过淘宝，来宇辰网买无人机，事实证明我的选择没有错，全五星好评！</div>
+  <div class="model"><span class="xinhao">型号:精灵3-2.7K版</span><span class="spR">2 回复</span></div>
+  <div class="clear"></div>
+ </div>
+ <div class="ctn">
+  <div class="head">
+   <span class="username">大熊</span>
+   <span class="vip">(钻石会员)</span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="xin"></span>
+   <span class="time">2015-08-16</span>
+  </div>
+  <div class="con">特别棒</div>
+  <div class="model"><span class="xinhao">型号:精灵3-2.7K版</span><span class="spR">0 回复</span></div>
+  <div class="clear"></div>
+ </div>
+ <a class="more" href="#">查看全部评论</a>
+ <div class="clear"></div>
+</div>
+<!--猜你喜欢-->
+<div class="ind_like">
+ <p class="title">猜你喜欢</p>
+ <div class="div1">
+  <a href="#"><img src="images/advice1.jpg"></a>
+  <span>易瓦特EWZ-S8MINI型八旋翼智能农药喷洒无人机</span>
+  <b>¥ 19999</b>
+  <div class="clear"></div>
+ </div>
+ <div class="div1">
+  <a href="#"><img src="images/advice2.jpg"></a>
+  <span>3DR SOLO全球首款智能四轴无人机整机带云平台遥控</span>
+  <b>¥ 5999</b>
+  <div class="clear"></div>
+ </div>
+ <div class="clear"></div>
+</div>
+<!--选项按钮-->
+<div class="option">
+ <ul>
+  <li><a href="#">商品介绍</a></li>
+  <li><a href="#">规格参数</a></li>
+  <li><a href="#">售后保障</a></li>
+ </ul>
+</div>
+<!--商品介绍-->
+<div class="details">
+ <img src="images/Details_pic1.jpg">
+ <img src="images/Details_pic2.jpg">
+ <img src="images/Details_pic3.jpg">
+ <div class="clear"></div>
+</div>
+<!--固定底部-->
+<div class="com_bottom">
+ <a class="aL" href="#">收藏</a>
+ <a class="lease" href="#">租赁</a>
+ <a class="join" href="#">加入购物车</a>
+ <a class="cart" href="#">购物车</a>
+</div>
+</body>
+</html>

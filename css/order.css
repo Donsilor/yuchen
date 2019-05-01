@@ -1,0 +1,50 @@
+charset "utf-8";
+/* 深圳市静江网络科技有限公司 */
+*{margin:0px; padding:0px;}
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body {position: relative; font-family:微软雅黑; font-weight: normal; color:#000; font-weight:normal; background:#f6f6f6; margin:0px; padding:0px;}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none;  font-family: Borda;} 
+input,textarea{ font-family: Borda; margin:0px; padding:0px;}
+ul,li{list-style-type:none; margin:0px; padding:0px;}
+p{ margin:0px; padding:0px;}
+img{border:none;}
+a{text-decoration:none; color:#999;}
+a:hover{text-decoration:none;}
+.clear{clear:both;}
+*,*:before,*:after {-webkit-box-sizing: border-box; box-sizing: border-box;}
+/*初始化样式结束*/
+
+/*************************  搜索栏  *************************/
+.search{width:100%; height:3em; padding-top:0.4em; background-color:#efefef;}
+.search input{width:95%; margin-left:2.5%; height:2.2em; border:none; border-radius:5px; outline:none; font-size:1em; padding-left:2.3em; background:url(../images/searchR_pic.png) no-repeat 3% 50%; background-size:7%; background-color:#fff;}
+
+/*************************  选项  *************************/
+.option{width:100%; height:3em; background-color:#fff; border-bottom:1px solid #e1e1e1; border-top:1px solid #e1e1e1; background:#f6f6f6;}
+.option li{width:25%; float:left; padding-top:0.4em;}
+.option a{display:block; width:100%; height:2.2em; line-height:2.2em; text-align:center; border-right:1px solid #e1e1e1;}
+.option li:hover{border-bottom:5px solid #F5C301;}
+
+/*************************  ctn  *************************/
+.ctn{width:100%; height:20em; text-align:center; padding-top:5em; background-color:#fff; font-size:0.8em; color:#949494;}
+
+/*************************  footer  *************************/
+.footer{width:100%; height:10em; background:url(../images/logo10.png) no-repeat center; background-size:30%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

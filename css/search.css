@@ -1,0 +1,54 @@
+charset "utf-8";
+/* 深圳市静江网络科技有限公司 */
+*{margin:0px; padding:0px;}
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body {position: relative; font-family:微软雅黑; font-weight: normal; color:#000; font-weight:normal; background:#fff; margin:0px; padding:0px;}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none;  font-family: Borda;} 
+input,textarea{ font-family: Borda; margin:0px; padding:0px;}
+ul,li{list-style-type:none; margin:0px; padding:0px;}
+p{ margin:0px; padding:0px;}
+img{border:none;}
+a{text-decoration:none; color:#999;}
+a:hover{text-decoration:none;}
+.clear{clear:both;}
+*,*:before,*:after {-webkit-box-sizing: border-box; box-sizing: border-box;}
+/*初始化样式结束*/
+
+/*************************  搜索栏  *************************/
+.search{width:100%; height:3em; padding-top:0.4em; background-color:#efefef;}
+.search input{width:95%; margin-left:2.5%; height:2.2em; border:none; border-radius:5px; outline:none; font-size:1em; padding-left:2.3em; background:url(../images/searchR_pic.png) no-repeat 3% 50%; background-size:7%; background-color:#fff;}
+
+/*************************  分类  *************************/
+.fenlei{width:100%:}
+.fenlei .ctnL{width:24.3%; float:left;}
+.fenlei .ctnL li{width:100%; height:2.4em; border-top:1px solid #d3d3d3; background-color:#efefef;}
+.fenlei .ctnL li a{display:block; width:100%; line-height:3em; text-align:center; font-size:0.8em;}
+.fenlei .ctnL li:last-child{border-bottom:1px solid #d3d3d3;}
+.fenlei .ctnR{width:75.7%; float:right; padding-top:0.3em;}
+.fenlei .ctnR .banner{width:95%; margin-left:2.5%; height:3em; background-color:#9d9d9d;}
+.fenlei .ctnR p{line-height:2.5em; font-size:0.8em; padding-left:2.5%;}
+.fenlei .ctnR li{width:30%; min-height:5em; float:left; margin-left:2.5%; background-color:#efefef; margin-bottom:0.8em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

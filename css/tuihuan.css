@@ -1,0 +1,41 @@
+charset "utf-8";
+/* 深圳市静江网络科技有限公司 */
+*{margin:0px; padding:0px;}
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body {position: relative; font-family:微软雅黑; font-weight: normal; color:#000; font-weight:normal; background:#f6f6f6; margin:0px; padding:0px;}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none;  font-family: Borda;} 
+input,textarea{ font-family: Borda;}
+ul,li{list-style-type:none; margin:0px; padding:0px;}
+p{ margin:0px; padding:0px;}
+img{border:none;}
+a{text-decoration:none; color:#999;}
+a:hover{text-decoration:none;}
+.clear{clear:both;}
+*,*:before,*:after {-webkit-box-sizing: border-box; box-sizing: border-box;}
+/*初始化样式结束*/
+
+/************************ 选项 ************************/
+.option{width:100%; height:2.5em; padding-top:0.2em;}
+.option a{display:block; width:50%; height:2.3em; line-height:2.2em; text-align:center; float:left; border-right:1px solid #e1e1e1; color:#373737;}
+.option a:hover{border-bottom:5px solid #F5C301; color:#F5C301;}
+
+/************************ 订单 ************************/
+.ctn{width:100%; background-color:#fff; border-bottom:1px solid #e1e1e1; border-top:1px solid #e1e1e1; margin-bottom:1em;}
+.ctn .head{width:100%; height:2.3em; line-height:2.3em; padding-left:5%; border-bottom:1px solid #e1e1e1;}
+.ctn .con{width:100%; padding:0.5em 0; padding-left:5%; position:relative;}
+.ctn .con p{line-height:1.5em;}
+.ctn .con a{position:absolute; top:0px; right:0px; display:block; width:2em; height:100%; background:url(../images/cuxiao_a2.jpg) no-repeat center; background-size:30%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

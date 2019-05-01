@@ -1,0 +1,138 @@
+charset "utf-8";
+/* 深圳市静江网络科技有限公司 */
+*{margin:0px; padding:0px;}
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body {position: relative; font-family:微软雅黑; font-weight: normal; color:#000; font-weight:normal; background:#f6f6f6; margin:0px; padding:0px;}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none;  font-family: Borda;} 
+input,textarea{ font-family: Borda;}
+ul,li{list-style-type:none; margin:0px; padding:0px;}
+p{ margin:0px; padding:0px;}
+img{border:none;}
+a{text-decoration:none; color:#999;}
+a:hover{text-decoration:none;}
+.clear{clear:both;}
+*,*:before,*:after {-webkit-box-sizing: border-box; box-sizing: border-box;}
+/*初始化样式结束*/
+
+/*************** 通用顶部 ***************/
+.com_top{width:100%; height:3em; background-color:#efefef;}
+.com_top .top_L{width:3em; height:100%; float:left; border-right:1px solid #dbdbdb;}
+.com_top .top_L a{display:block; width:3em; height:100%; margin:auto; text-align:center; font-size:0.8em; color:#7b7b7b; background:url(../images/topL_pic.png) no-repeat 50% 30%; background-size:50%; padding-top:2em;}
+.com_top .top_R{width:72.5%; height:100%; float:left; padding-left:2%;}
+.com_top .top_R .search{width:100%; height:1.8em; border-radius:5px; background-color:#fff; margin-top:0.6em;}
+.com_top .top_R .search_L{display:block; width:1.8em; height:100%; float:left; background:url(../images/searchL_pic.png) no-repeat center; background-size:75%; border-right:1px solid #dbdbdb;}
+.com_top .top_R input{width:87%; height:100%; float:left; border:none; background:url(../images/searchR_pic.png) no-repeat 5% center; background-size:8%; padding-left:15%; font-size:0.8em; outline:none; font-family:微软雅黑;}
+
+/****************  banner  ****************/
+.banner {width:100%; height:9.5em; overflow:hidden; position:relative; margin-bottom:1em;}
+.banner .bannerli{width:100%; height:10em;}
+.bx-wrapper {position: relative;margin: 0 auto;padding: 0;*zoom: 1;}
+.bx-wrapper img {width:100%;display: block;}
+.bx-wrapper .bx-pager{position: absolute;bottom:0.5em;width: 100%; text-align: center;}
+.bx-wrapper .bx-pager .bx-pager-item,.bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;*zoom: 1;*display: inline;}
+.bx-wrapper .bx-pager.bx-default-pager a { background:#1196DB; text-indent: -9999px;display: block;width:0.5em; height: 0.5em; border-radius:8px; outline: 0; margin-left:10px; margin-right:10px;}
+.bx-wrapper .bx-pager.bx-default-pager a.active { background:#E15517;}
+.bx-wrapper .bx-controls-direction a {position: absolute;top: 50%;margin-top: -20px;outline: 0;width:1.2em;height:2.3em;text-indent: -9999px;z-index: 9999;}
+.bx-wrapper .bx-prev {left:0%;background:url(../images/btnL.png) no-repeat 40% 50%; background-color:rgba(0,0,0,0.3); background-size:40%; border-radius:0 5px 5px 0;}
+.bx-wrapper .bx-next {right:0%;background:url(../images/btnR.png) no-repeat 60% 50%; background-color:rgba(0,0,0,0.3); background-size:40%; border-radius:5px 0 0 5px;}
+
+/****************  优惠券  ****************/
+.coupons{width:100%; height:5em; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; background-color:#fff; margin-bottom:1em;}
+.coupons .dL{width:34%; height:100%; float:left; padding-top:0.8em; margin-left:2%;}
+.coupons .dL b{font-weight:normal; display:block; width:100%; font-size:1em; line-height:1.8em; text-align:center;}
+.coupons .dL p{font-size:0.7em; text-align:center;}
+.coupons a{display:block; width:23%; float:left; margin-left:5%; padding-top:1em;}
+.coupons a img{width:100%;}
+
+/****************  热销品牌  ****************/
+.brand{width:100%; min-height:100px; background-color:#fff; border-top:1px solid #e1e1e1; margin-bottom:1em;}
+.brand .title{width:100%; height:35px; line-height:35px; border-bottom:1px solid #e1e1e1; text-align:center;}
+.brand .ctn{width:100%; min-height:75%; margin:auto;}
+.brand .ctn ul{border-left:1px solid #e1e1e1;}
+.brand .ctn li{width:33.3%; float:left; height:33.3%; border-right:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; background-color:#fff;}
+.brand .ctn li a{display:block; width:100%; height:100%;}
+.brand .ctn li img{width:100%;}
+
+/****************  热销排行  ****************/
+.rank{width:100%; height:30em; background-color:#fff; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; margin-bottom:1em;}
+.rank .title{width:100%; height:35px; line-height:35px; border-bottom:1px solid #e1e1e1; text-align:center;}
+.rank .ctn{width:95%; margin:auto; height:28%; border:1px solid #e1e1e1; margin-top:3%;}
+.rank .ctn .cL{display:block; width:36%; height:90%; float:left; background-color:#f7f7f7; margin:0 2%; margin-top:2%;}
+.rank .ctn .cL img{width:100%; height:100%;}
+.rank .ctn .proname{font-size:0.9em; min-height:3.8em; margin-top:2%;}
+.rank .ctn b{font-weight:normal; color:#DB2F00; font-size:0.9em;}
+.rank .ctn .tip{font-size:0.7em; color:#535353;}
+.rank .ctn a{display:block; width:7em; height:1.5em; line-height:1.5em; text-align:center; font-size:1em; background-color:#de0000; color:#fff; float:left; border-radius:3px;}
+
+/****************  无人机服务  ****************/
+.serve{width:100%; height:15em; background-color:#fff; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1;}
+.serve .title{width:100%; height:20%; border-bottom:1px solid #e1e1e1; padding-top:0.3em;}
+.serve .title p{text-align:center;}
+.serve .title .p1{font-size:1em; line-height:1.5em;}
+.serve .title .p2{font-size:0.6em; line-height:0.6em;}
+.serve .ctn1{width:100%; height:25%; border-bottom:1px solid #e1e1e1;}
+.serve .ctn1 .d1{width:33.3%; float:left; height:2.5em; margin-top:0.5em; border-right:1px solid #e1e1e1;}
+.serve .ctn1 .d1:last-child{border-right:none;}
+.serve .ctn1 .d1 img{width:2.5em; height:2.5em; border-radius:100%; border:1px solid #bfbfbf; float:left; margin-right:1%; margin-left:2%;}
+.serve .ctn1 .d1 p{font-size:1em;}
+.serve .ctn1 .d1 p span{font-size:0.5em; color:#9b9b9b;}
+.serve .ctn2{width:100%; height:55%;}
+.serve .ctn2 .d1{width:33.3%; height:100%; float:left; text-align:center; padding-top:1em;}
+.serve .ctn2 .d1 img{width:4em; height:4em; margin:auto; background-color:#FF8A8A; border-radius:100%;}
+
+/****************  关注  ****************/
+.Focus{width:100%; height:12em; background:url(../images/logo10.png) no-repeat 50% 65%; background-size:30%; padding-top:1em; margin-bottom:3em;}
+.Focus a{display:block; width:90%; text-align:center; height:2.5em; line-height:2.5em; margin:auto; background-color:#F6C401; color:#000; border-radius:3px;}
+
+/*************** 固定底部 ***************/
+.com_bottom{width:100%; height:3em; background-color:#ededed; position:fixed; left:0px; bottom:0px;}
+.com_bottom ul{height:100%;}
+.com_bottom li{width:20%; height:100%; float:left; font-size:0.8em;}
+.com_bottom li a{display:block; width:100%; height:100%; text-align:center; color:#333; padding-top:2em;}
+.com_bottom li .a1{background:url(../images/ico1.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a1:active{color:#FFCB00; background:url(../images/ico6.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a1:hover{color:#FFCB00; background:url(../images/ico6.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a2{background:url(../images/ico2.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a2:active{color:#FFCB00; background:url(../images/ico7.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a2:hover{color:#FFCB00; background:url(../images/ico7.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a3{background:url(../images/ico3.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a3:active{color:#FFCB00; background:url(../images/ico8.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a3:hover{color:#FFCB00; background:url(../images/ico8.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a4{background:url(../images/ico4.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a4:active{color:#FFCB00; background:url(../images/ico9.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a4:hover{color:#FFCB00; background:url(../images/ico9.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a5{background:url(../images/ico5.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a5:active{color:#FFCB00; background:url(../images/ico10.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a5:hover{color:#FFCB00; background:url(../images/ico10.png) no-repeat 50% 25%; background-size:20%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

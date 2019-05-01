@@ -1,0 +1,107 @@
+charset "utf-8";
+/* 深圳市静江网络科技有限公司 */
+*{margin:0px; padding:0px;}
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body {position: relative; font-family:微软雅黑; font-weight: normal; color:#000; font-weight:normal; background:#f6f6f6; margin:0px; padding:0px;}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none;  font-family: Borda;} 
+input,textarea{ font-family: Borda;}
+ul,li{list-style-type:none; margin:0px; padding:0px;}
+p{ margin:0px; padding:0px;}
+img{border:none; margin:0; padding:0;}
+a{text-decoration:none; color:#999; margin:0; padding:0;}
+a:hover{text-decoration:none;}
+.clear{clear:both;}
+*,*:before,*:after {-webkit-box-sizing: border-box; box-sizing: border-box;}
+/*初始化样式结束*/
+
+/*************** 通用顶部 ***************/
+.com_top{width:100%; height:3em;}
+.com_top .search{width:70%; height:2em; float:left; border-radius:5px; background-color:#fff; margin-top:0.5em; margin-left:1.6%;}
+.com_top .search_L{display:block; width:2em; height:100%; float:left; background:url(../images/searchL_pic.png) no-repeat center; background-size:75%; border-right:1px solid #dbdbdb;}
+.com_top input{width:85%; height:100%; float:left; border:none; background:url(../images/searchR_pic.png) no-repeat 5% center; background-size:8%; padding-left:15%; font-size:0.8em; outline:none; font-family:微软雅黑;}
+.com_top  .btn{display:block; float:left; width:12.5%; height:2.5em; line-height:2.5em; text-align:center; margin-top:0.5em; border-radius:3px; font-size:0.8em; color:#fff; margin-left:1.1%;}
+.com_top  .a1{background-color:#FF5858;}
+.com_top  .a2{background-color:#F5C301;}
+
+/****************  banner  ****************/
+.banner {width:100%; height:8em; overflow:hidden; position:relative;}
+.banner .bannerli{width:100%; height:8em;}
+.bx-wrapper {position: relative;margin: 0 auto;padding: 0;*zoom: 1;}
+.bx-wrapper img {width:100%; height:100%;display: block;}
+.bx-wrapper .bx-pager{position: absolute;bottom:0em;width: 100%; text-align: center;}
+.bx-wrapper .bx-pager .bx-pager-item,.bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;*zoom: 1;*display: inline;}
+.bx-wrapper .bx-pager.bx-default-pager a { background:#fff; text-indent: -9999px;display: block;width:0.4em; height: 0.4em; border:1px solid #fff; border-radius:8px; outline: 0; margin-left:10px; margin-right:10px;}
+.bx-wrapper .bx-pager.bx-default-pager a.active { background:#000; border:1px solid #fff;}
+.bx-wrapper .bx-controls-direction a {position: absolute;top: 50%;margin-top: -20px;outline: 0;width:1.2em;height:2.3em;text-indent: -9999px;z-index: 9999;}
+.bx-wrapper .bx-prev {left:0%;background:url(../images/btnL.png) no-repeat 40% 50%; background-color:rgba(0,0,0,0.3); background-size:40%; border-radius:0 5px 5px 0;}
+.bx-wrapper .bx-next {right:0%;background:url(../images/btnR.png) no-repeat 60% 50%; background-color:rgba(0,0,0,0.3); background-size:40%; border-radius:5px 0 0 5px;}
+
+/****************  店铺名称  ****************/
+.storeName{width:100%; min-height:3.1em; padding-left:1.8%;}
+.storeName img{width:30%; float:left; margin-top:9px; margin-bottom:9px; margin-right:2%;}
+.storeName p{float:left; font-size:1em; line-height:3.1em;}
+.storeName a{display:block; width:15%; float:right; height:100%; background:url(../images/ico11.png) no-repeat 50% 25%; background-size:40%; font-size:0.8em; text-align:center; padding-top:2em;}
+
+/****************  切换  ****************/
+.switch{width:100%; height:2.8em; background-color:#fff; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; margin-bottom:1em;}
+.switch a{display:block; width:50%; height:100%; line-height:2.8em; text-align:center; float:left; border-right:1px solid #e1e1e1; color:#000;}
+.switch a:hover{color:#F5C301; border-bottom:5px solid #F5C301;}
+
+/****************  优惠券  ****************/
+.coupons{width:100%; padding-top:0.5em; padding-bottom:0.3em; background-color:#fff; border-bottom:1px solid #e1e1e1; border-top:1px solid #e1e1e1; padding-left:5%; margin-bottom:1em;}
+.coupons a{display:block; width:23%; float:left; margin-left:7%;}
+.coupons a img{width:100%;}
+
+/****************  推荐商品  ****************/
+.goods{width:100%; padding-bottom:0.3em; background-color:#fff; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; margin-bottom:1em;}
+.goods .title{width:100%; height:2.5em; line-height:2.5em; text-align:center;}
+.goods .ctn{width:45%; padding-bottom:0.3em; margin-left:3.3%; border:1px solid #e1e1e1; float:left; margin-bottom:0.5em;}
+.goods .ctn a{width:100%;}
+.goods .ctn a img{width:100%;}
+.goods .ctn p{font-size:0.8em; min-height:5em; padding:0 2%;}
+.goods .ctn b{color:#DB2F00; font-weight:normal; font-size:1.2em; padding-left:3%;}
+
+/****************  热销商品  ****************/
+.goods2{width:100%; background-color:#fff; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; padding-bottom:0.5em;}
+.goods2 .title{width:100%; height:2.5em; line-height:2.5em; text-align:center;}
+.goods2 .ctn{width:45%; padding-bottom:0.3em; margin-left:3.3%; border:1px solid #e1e1e1; float:left; margin-bottom:0.5em;}
+.goods2 .ctn a{width:100%;}
+.goods2 .ctn a img{width:100%;}
+.goods2 .ctn p{font-size:0.8em; min-height:5em; padding:0 2%;}
+.goods2 .ctn b{color:#DB2F00; font-weight:normal; font-size:1.2em; padding-left:3%;}
+
+/****************  关注  ****************/
+.Focus{width:100%; height:7em; background:url(../images/logo10.png) no-repeat 50% 80%; background-size:30%; padding-top:1em; margin-bottom:3em;}
+.Focus a{display:block; width:90%; text-align:center; height:2.5em; line-height:2.5em; margin:auto; background-color:#F6C401; color:#000; border-radius:3px;}
+
+/*************** 固定底部 ***************/
+.com_bottom{width:100%; height:3em; background-color:#ededed; position:fixed; left:0px; bottom:0px;}
+.com_bottom ul{height:100%;}
+.com_bottom li{width:20%; height:100%; float:left; font-size:0.8em;}
+.com_bottom li a{display:block; width:100%; height:100%; text-align:center; color:#333; padding-top:2em;}
+.com_bottom li .a1{background:url(../images/ico1.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a1:active{color:#FFCB00; background:url(../images/ico6.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a1:hover{color:#FFCB00; background:url(../images/ico6.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a2{background:url(../images/ico2.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a2:active{color:#FFCB00; background:url(../images/ico7.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a2:hover{color:#FFCB00; background:url(../images/ico7.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a3{background:url(../images/ico3.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a3:active{color:#FFCB00; background:url(../images/ico8.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a3:hover{color:#FFCB00; background:url(../images/ico8.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a4{background:url(../images/ico4.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a4:active{color:#FFCB00; background:url(../images/ico9.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a4:hover{color:#FFCB00; background:url(../images/ico9.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a5{background:url(../images/ico5.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a5:active{color:#FFCB00; background:url(../images/ico10.png) no-repeat 50% 25%; background-size:20%;}
+.com_bottom li .a5:hover{color:#FFCB00; background:url(../images/ico10.png) no-repeat 50% 25%; background-size:20%;}
+
+
+
+
+
+
+
+
+
+
+
